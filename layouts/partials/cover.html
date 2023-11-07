@@ -22,7 +22,7 @@
                     {{- end -}}{{$cover.Permalink }} {{printf "%dw" ($cover.Width)}}" 
             sizes="(min-width: 768px) 720px, 100vw" src="{{ $cover.Permalink }}" alt="{{ $alt }}" 
             {{- if $.IsHome -}}
-                style="height: 360px; object-fit: cover;">
+                class="home-cover">
             {{- else -}}
                 width="{{ $cover.Width }}" height="{{ $cover.Height }}">
             {{- end -}}

@@ -27,6 +27,12 @@
     .footer {
         padding: calc((var(--footer-height) - var(--gap) - 10px) / 2) var(--gap);
     }
+
+    /* home cover */
+    .entry-cover img.home-cover {
+        height: 200px ;
+        object-fit: cover;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -34,6 +40,12 @@
     ::-webkit-scrollbar {
         width: 19px;
         height: 11px;
+    }
+
+    /* home cover */
+    .entry-cover img.home-cover {
+        height: 360px ;
+        object-fit: cover;
     }
 }
 
