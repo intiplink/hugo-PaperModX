@@ -1,7 +1,7 @@
 <div class="callout">
   <div>{{ .Get "emoji" | default "💡" }}</div>
 	<div class="callout-inner">
-    {{ .Get "text" }}
+    {{ .Get "text" | .Page.RenderString }}
   </div>
 </div>
 
